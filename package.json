@@ -1,0 +1,26 @@
+{
+  "name": "unix-to-utc",
+  "version": "0.0.1",
+  "description": "Convert Unix time to UTC",
+  "author": "Peter Wilmott <p@p8952.info>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p8952/Unix-to-UTC.git"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "mocha": "^5.0.1",
+    "prettier": "^1.11.1",
+    "rewire": "^3.0.2"
+  },
+  "scripts": {
+    "test": "mocha ./*_test.js"
+  }
+}
+
+git filter-branch -f --env-filter "
+    GIT_AUTHOR_NAME='p8952'
+    GIT_COMMITTER_NAME='Peter Wilmott'
+  " HEAD
