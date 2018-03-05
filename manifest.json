@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Unix to UTC",
+  "version": "0.0.1",
+  "description": "Convert Unix time to UTC",
+  "author": "Peter Wilmott <p@p8952.info>",
+  "icons": {
+    "48": "icon.png",
+    "96": "icon@2x.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
