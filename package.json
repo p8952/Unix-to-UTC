@@ -19,8 +19,3 @@
     "test": "mocha ./*_test.js"
   }
 }
-
-git filter-branch -f --env-filter "
-    GIT_AUTHOR_NAME='p8952'
-    GIT_COMMITTER_NAME='Peter Wilmott'
-  " HEAD
